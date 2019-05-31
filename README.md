@@ -1,2 +1,2 @@
-# es6
+# ES6
 Javascript ES6
