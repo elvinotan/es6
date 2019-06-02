@@ -11,17 +11,21 @@
 			{name:'Sony', price:90},
 		];
 		
+		function salesTag(p) {
+			let salesTag = (p.price < 100 ) ? `<div><strong>On Sales</strong></div` : ``;
+			return salesTag;
+		}
+		
 		let tamplate = '';
 		products.forEach(function(p){
-			
-			let salesTag = (p.price < 100 ) ? `<div>On Sales</div` : ``;
 			
 			tamplate += `<div>
 								<div>${p.name}</div>
 								<div>${p.price}</div>
-								${salesTag}
+								${salesTag(p)}
 				         </div></br>`;	
 		});
+		
 		document.body.insertAdjacentHTML('afterbegin',tamplate);
 	</script>
 </html>
