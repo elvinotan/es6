@@ -1,0 +1,23 @@
+Pada String tempalate bisa melakukan inject</br>
+a. String</br>
+b. Math expression</br>
+c. Function</br>
+d. Object</br>
+<script>
+	const names = ['James', 'Ron', 'Ace'];
+	
+	const user = {
+		name:'Btpn',
+		address:'Mega Kuningan'
+	}
+	
+	function calc(a, b) {
+		return a+b;
+	}
+	
+	console.log(`This name is ${names[Math.floor(Math.random()*names.length-1)+1]}`);
+	console.log(`Jumlah 5+5 adalah ${5+5}`);
+	console.log(`Jumlah 7+7 adalah ${calc(7,7)}`);
+	console.log(`Perusahaan ${user.name} alamat di ${user.address}`);
+	
+</script>
