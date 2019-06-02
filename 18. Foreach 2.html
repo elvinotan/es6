@@ -1,0 +1,16 @@
+<html>
+	<head>
+	</head>
+	<body>
+	</body>
+	<script>
+		const names= ['Constantine', 'Davin', 'Ethan'];
+		
+		// forEach hanya looping sebanyak jumlah data dan tidak return apa apa
+		let template = ''
+		names.forEach(function(name){
+			template +=`<div>Hai, my name is ${name}</div>`;
+		})
+		document.body.insertAdjacentHTML('afterbegin',template);
+	</script>
+</html>
