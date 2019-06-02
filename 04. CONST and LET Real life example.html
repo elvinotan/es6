@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>ES6</title>
+	</head>
+	<body>
+		<div>Div 1</div>
+		<div>Div 2</div>
+		<div>Div 3</div>
+		<div>Div 4</div>
+		<div>Div 5</div>
+	</body>
+	
+	<script>
+		var divs = document.getElementsByTagName('div');
+		
+		//for (var i = 0; i < divs.length; i++) {
+		//	divs[i].addEventListener('click', function(){
+		//		console.log('You click div # '+i);
+		//	});
+		//}
+		
+		for (let i = 0; i < divs.length; i++) {
+			divs[i].addEventListener('click', function(){
+				console.log('You click div # '+i);
+			});
+		}
+		
+		 
+	</script>
+</html>
