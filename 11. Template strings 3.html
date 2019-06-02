@@ -1,0 +1,39 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<div class='user_list'>
+			<div class='user'>
+				<div>Name</div>
+				<div>Lastname</div>
+			</div>
+		</div>
+	</body>
+	
+	<script>
+		var list = document.querySelector('.user_list');
+		
+		function addUserEs5(name, lastname) {
+			var temp = '';
+			
+			temp += '<div class="user">';
+			temp += '<div>'+name+'</div>';
+			temp += '<div>'+lastname+'</div>';
+			temp += '</div>';
+			
+			list.insertAdjacentHTML('beforeend', temp);
+		};
+		
+		function addUserEs6(name, lastname) {
+			var temp = `<div class='user'>
+							<div>${name}</div>
+							<div>${lastname}</div>
+						</div>`;	
+			
+			list.insertAdjacentHTML('beforeend', temp);
+		};
+		
+		addUserEs5('Constantine', 'Davin');
+		addUserEs6('Carinnia', 'Tan');
+	</script>
+</html>
