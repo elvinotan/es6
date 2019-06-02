@@ -1,0 +1,52 @@
+Variable Scope </br>
+- Local Scope = Function Scope</br>
+- Global Scope = Browser Scope</br>
+<script>
+	// Example 1
+	function example1() {
+		var winner = true;
+		
+		function user() {
+			var winner = false; // create instane winner for local
+			// winner = true; // merubah nilai variable global
+			console.log("in 1 "+winner);
+		}
+		
+		user();
+		console.log("out 1 "+winner);
+	}
+	
+	
+	// Example 2
+	function example2() {
+	  var value = 10;
+	  var winner = true;
+	  
+	  if (value == 10) {
+		  var winner = false; // merubah nilai variable global
+		  //winner = false; // merubah nilai variable global
+		  console.log("in 2 "+winner);
+	  }
+	  
+	  console.log("out 2 "+winner);
+	}
+	
+	
+	// Example 3
+	function example3() {
+	  const value = 10;
+	  let winner = true;
+	  
+	  if (value == 10) {
+		  let winner = false; // create instane winner for local
+		  //winner = false; // merubah nilai variable global
+		  console.log("in 3 "+winner);
+	  }
+	  
+	  console.log("out 3 "+winner);
+	}
+	
+	//example1();
+	//example2();
+	example3();
+</script>
