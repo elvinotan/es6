@@ -1,0 +1,27 @@
+<html>
+	<head>
+	</head>
+	<body>
+	</body>
+	<script>
+		const products = [
+			{name:'Iphone', price:200},
+			{name:'Motorola', price:70},
+			{name:'Samsung', price:900},
+			{name:'Sony', price:90},
+		];
+		
+		let tamplate = '';
+		products.forEach(function(p){
+			
+			let salesTag = (p.price < 100 ) ? `<div>On Sales</div` : ``;
+			
+			tamplate += `<div>
+								<div>${p.name}</div>
+								<div>${p.price}</div>
+								${salesTag}
+				         </div></br>`;	
+		});
+		document.body.insertAdjacentHTML('afterbegin',tamplate);
+	</script>
+</html>
