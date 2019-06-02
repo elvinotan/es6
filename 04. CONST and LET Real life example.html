@@ -13,17 +13,17 @@
 	<script>
 		var divs = document.getElementsByTagName('div');
 		
-		//for (var i = 0; i < divs.length; i++) {
-		//	divs[i].addEventListener('click', function(){
-		//		console.log('You click div # '+i);
-		//	});
-		//}
-		
-		for (let i = 0; i < divs.length; i++) {
+		for (var i = 0; i < divs.length; i++) {
 			divs[i].addEventListener('click', function(){
 				console.log('You click div # '+i);
 			});
 		}
+		
+		//for (let i = 0; i < divs.length; i++) {
+			//divs[i].addEventListener('click', function(){
+				//console.log('You click div # '+i);
+			//});
+		//}
 		
 		 
 	</script>
