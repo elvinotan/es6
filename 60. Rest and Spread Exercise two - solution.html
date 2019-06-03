@@ -1,0 +1,15 @@
+<script>
+	function showItemsES5(arg1,arg2,arg3){
+	   var arr = [arg2,arg3].concat(arg1)
+	   console.log(arr)
+	}
+	
+	function showItemsES6(arg1,...args){
+	   const allargs = [...arg1, ...args];
+	   console.log(allargs);
+	}
+	
+	showItemsES5(["dogs","cats"],"turtles","sharks");
+	showItemsES6(["dogs","cats"],"turtles","sharks");
+	
+</script>
