@@ -1,0 +1,33 @@
+<script>
+	//File lokasi app.js
+	export function notmainFunction() {
+		console.log('Not Main Function')
+	}
+	
+	export default function mainFunction() {
+		console.log('Main Function')
+	}
+	
+	// File lokasi main.js
+	// Perhatikan cara import default and non default function
+	// Dalam 1 class hanya boleh ada 1 export default
+	import { notmainFunction } from './app.js';
+	import mainFunction from './app.js';
+	
+	notmainFunction();
+	mainFunction();
+	
+	
+	//File lokasi app.js
+	const api = {
+		name:'Constantine',
+		showname() {
+			console.log('Constantine');
+		}
+	}
+	export default api;
+	
+	//File lokasi main.js
+	import api from './app.js''
+	api.showname();
+</script>
