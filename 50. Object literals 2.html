@@ -1,0 +1,31 @@
+<script>
+	const heroES5 = function(name, powers) {
+		return {
+			name:name,
+			powers: powers,
+			getFriends : function() {
+				return 'Louise Lane'
+			}
+		}
+	}
+	
+	const heroES6 = (name, powers) => {
+		return {
+			name:name,
+			powers: powers,
+			getFriends() {
+				return 'Louise Lane'
+			},
+			getEnemies() {
+				return 'Lex Luthor'
+			}
+		}
+	}	
+	
+const aheroES5 = heroES5('Superman ES5',  'Fly ES5');
+console.log(aheroES5);
+
+const aheroES6 = heroES6('Superman ES6',  'Fly ES6');
+console.log(aheroES6);
+
+</script>
