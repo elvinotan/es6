@@ -1,0 +1,21 @@
+<script>
+	// Tujuan : Reduce amount of code
+	
+	function hey() {
+		console.log('hey');
+	}
+	
+	function argsES5(arg1, arg2, arg3) {
+		const args = [arg1, arg2, arg3];
+		
+		console.log(args);
+	}
+
+	function argsES6(...args) {
+		console.log(args);
+		args[3]();
+	}
+
+	argsES5('Arg1', 'Arg2', 'Arg3', hey);
+	argsES6('Arg1', 'Arg2', 'Arg3', hey);
+</script>
