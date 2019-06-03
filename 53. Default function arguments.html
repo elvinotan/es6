@@ -1,0 +1,22 @@
+<script>
+	function carES5(brand) {
+		console.log(`My Brand is ${brand}`)	
+	}
+	
+	function carES6_1(brand = 'Fords') {
+		console.log(`My Brand is ${brand}`)	
+	}
+	
+	function randomBrand() {
+		const brands = ['Ford', 'Nissan', 'BMW'];
+		return brands[Math.floor(Math.random() * brands.length)];
+	}
+	
+	function carES6_2(brand = randomBrand()) {
+		console.log(`My Brand is ${brand}`)	
+	}
+	
+	carES5('Chevy');
+	carES6_1();
+	carES6_2();
+</script>
