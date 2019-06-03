@@ -1,0 +1,28 @@
+<script>
+	// File lokasi app.js
+	// Harus gunakan export agar variable/method ter-expose
+	const sum = 10;
+	const otherSum = 10+10;
+	function random() {
+		return Math.randoom();
+	}
+	const array = [1,2,3,4,5];
+	const obj = {id:1};
+	export {
+		sum as penjumlahan,
+		otherSum,
+		random,
+		array,
+		obj
+	}
+	
+	// File lokasi main.js
+	// Perhatikan untuk perubahan nama (as) bisa dari exporter atau importer
+	import { penjumlahan, random as acakacak } from './app.js'
+	
+	// bisa juga
+	import * as apple from './app.js';
+	console.log(apple.penjumlahan);
+	console.log(apple.random);
+	
+</script>
