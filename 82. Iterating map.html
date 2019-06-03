@@ -1,0 +1,35 @@
+<script>
+	let superHeros = new Map();
+	
+	superHeros.set('Batman',{
+		realName :'Bruce Wayne',
+		power:'Millionaire',
+		weakness:'None'
+	})
+	
+	superHeros.set('Superman',{
+		realName :'Clark Kent',
+		power:'All',
+		weakness:'Stone'
+	})
+	
+	// Using for of
+	//for (let [key, value] of superHeros) {
+	//	console.log(key);
+	//	console.log(value);
+	//}
+	
+	// Using forEach
+	//superHeros.forEach((value, key)=>{
+	//	console.log(key);
+	//	console.log(value);
+	//})
+	
+	// Using Array.from
+	console.log(Array.from(superHeros.keys()));
+	console.log(Array.from(superHeros.values()));
+	
+	// Using Array.from and map to get realName
+	let names = Array.from(superHeros.values()).map(obj=>obj.realName);
+	console.log(names);
+</script>
