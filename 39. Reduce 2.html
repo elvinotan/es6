@@ -1,0 +1,15 @@
+<script>
+	const users = [
+		{name:'Constantine', lastname:'Davin', age:12},
+		{name:'Upin', lastname:'Ipin', age:10},
+		{name:'Tom', lastname:'Tom', age:40},
+	];
+	
+	//Penerapan reduce untuk filtering hanya ambil nama saja
+	const names = users.reduce(function(group, p){
+		group.push(p.name);
+		return group;
+	}, []);
+	
+	console.log(names);
+</script>
