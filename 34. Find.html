@@ -1,0 +1,18 @@
+<script>
+	const brands = [
+		{name:'Apple', id:1},
+		{name:'Hp', id:2},
+		{name:'Samsung', id:3},
+		{name:'Samsung', id:4}
+	];
+	
+	// Find ini mirip sekali dengan Filter, perbedaanya adalah
+	// kalo filter akan looping data sampai selesai
+	// kalo find hanya looping data begitu ketemu 1 dia akan break
+	
+	const result = brands.find(function(p){
+		return p.name === 'Samsung';
+	});
+	
+	console.log(result);
+</script>
