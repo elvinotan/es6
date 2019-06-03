@@ -1,0 +1,24 @@
+<script>
+	var user = {
+		name : 'Constantine',
+		lastname : 'Davin',
+		age : 12
+	}
+	
+	//ES5
+	var name = user.name;
+	var lastname = user.lastname;
+	var age = user.age;
+	console.log('Name '+name+', lastname '+lastname+', age '+age);
+
+	//ES6 1
+	//const {name, lastname, age} = user;
+	//console.log(`Name ${name}, lastname ${lastname}, age ${age}`);
+
+	//ES6 2
+	function message({name, lastname, age}, add) {
+		console.log(`Name ${name}, lastname ${lastname}, age ${age} ${add}`);
+	}
+	
+	message(user, 'Tambahan');
+</script>
