@@ -1,0 +1,14 @@
+<script>
+	const brands_sport = ["Ferari", "BMW"];
+	const brands_other = ["Audi", "Ford"];
+	
+	//ES5
+	const newArrayES5 = brands_sport.concat(brands_other);
+	newArrayES5.push('Other brand');
+	console.log(newArrayES5);
+	
+	//ES6
+	const newArrayES6 = [...brands_sport, ...brands_other, 'Other Brand'];
+	console.log(newArrayES6);
+	
+</script>
