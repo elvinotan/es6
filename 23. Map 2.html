@@ -1,0 +1,27 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<select>
+		</select>
+	</body>
+	<script>
+		const users = [
+			{user:'Constantine', age:12, eyes:'brown'},
+			{user:'Davin', age:36, eyes:'black'},
+			{user:'Ethan', age:40, eyes:'blue'},
+		];
+		
+		const names = users.map(function(user){
+			return user.user
+		});
+		
+		console.log(names);
+		
+		names.forEach(function(name){
+			select = document.querySelector('select');
+			console.log(name);
+			select.insertAdjacentHTML('afterbegin',`<option value='${name}'>${name}</option>`)
+		})
+	</script>
+</html>
