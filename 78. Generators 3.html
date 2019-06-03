@@ -1,0 +1,22 @@
+<script>
+	function* brands() {
+		//function(){}
+		yield 'Ford';
+		//function(){}
+		yield 'Nissan';
+		yield 'Chevy';
+		yield 'Toyota';
+		yield 'Honda';
+	}
+	
+	const gen = brands();
+	
+	let array = [];
+	for (let i of brands()) {
+		console.log(i);
+		
+		array = [...array, i];
+	}
+	
+	console.log(array);
+</script>
