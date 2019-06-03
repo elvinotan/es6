@@ -1,0 +1,17 @@
+<script>
+	const products = [
+		{name:'ipad', category:'device'},
+		{name:'panasonic', category:'TV'},
+		{name:'maspion', category:'blender'},
+		{name:'samsung', category:'phone'},
+		{name:'sharp', category:'TV'},
+	];
+	
+	// Ciri khas dari filter adalah looping sejumlah n object dan akan
+	// mengembalikan n-m object, dimana di dalam function merupakan bolean expression
+	const result = products.filter(function(p){
+		return p.category === 'TV';
+	});
+	
+	console.log(result);
+</script>
