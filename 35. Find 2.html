@@ -1,0 +1,46 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<label>Price</label>
+		<select id='price'>
+			<option value="100">Less then 100</option>
+			<option value="300">Less then 300</option>
+			<option value="500">Less then 500</option>
+		</select>
+		<label>Type</label>
+		<select id='type'>
+			<option value="Sport car">Sport car</option>
+			<option value="Wagon">Wagon</option>
+			<option value="Urban">Urban</option>
+		</select>
+		</br>
+		</br>
+		<div class='search'>
+			Search
+		</div>
+	</body>
+	<script>
+		const cars = [
+			{brand:'Ford', price:500, availabel:2, type:'Sport car'},
+			{brand:'Nissan', price:200, availabel:5, type:'Wagon'},
+			{brand:'Chevy', price:300, availabel:4, type:'Sport car'},
+			{brand:'Porsche', price:100, availabel:1, type:'Urban'},
+		];
+		
+		document.querySelector('.search').addEventListener('click', function(){
+			const price = parseInt(document.querySelector('#price').value);	
+			const type = document.querySelector('#type').value;	
+			
+			const result = cars.find(function(p){
+				return p.price < price && p.type === p.type && p.availabel > 0;
+			});
+			if (result) {
+				console.log(`Found brand ${result.brand} availabel ${result.availabel}`);	
+			}else{
+				console.log('No Car for you');
+			}
+			
+		});
+	</script>
+</html>
