@@ -4,4 +4,14 @@
 	   {name:'Nissan',price:400},
 	   {name:'Nissan',price:600}
 	];
+	
+	function rate(price) {
+		return price * 14000;
+	}
+	
+	const ncars = cars.map(function(p){
+		return `The ${p.name} is ${rate(p.price)} Rupiah`;
+	});
+	
+	console.log(ncars);
 </script>
