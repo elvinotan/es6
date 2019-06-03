@@ -1,0 +1,12 @@
+<script>
+	const request = (url, data) => {
+		$.ajax({method:'post', url:url, data:data });
+	}
+	
+	// Convert into
+	const requestConvert = (url, data) => {
+		$.ajax({method:'post', url, data });
+	}
+	
+	request('http://requst.com', {car:'ford'})
+</script>
