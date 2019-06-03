@@ -1,0 +1,17 @@
+<script>
+	const previous = 200;
+	const current = [
+		{expense:'Guitar', amount:200},
+		{expense:'Mic', amount:100},
+		{exponse:'Starp', amount:100}
+	]
+	
+	// }, previous); = initial value for first parameter, that is sum
+	// return sum + p.amount = Using calculation and return and save to variable sum
+	
+	const result = current.reduce(function(sum, p){
+		return sum + p.amount; 
+	}, previous);
+	
+	console.log(result);
+</script>
