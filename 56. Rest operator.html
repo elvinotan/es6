@@ -11,9 +11,10 @@
 		console.log(args);
 	}
 
-	function argsES6(...args) {
+	function argsES6(arg1, ...args) {
+		console.log(arg1);
 		console.log(args);
-		args[3]();
+		args[2]();
 	}
 
 	argsES5('Arg1', 'Arg2', 'Arg3', hey);
