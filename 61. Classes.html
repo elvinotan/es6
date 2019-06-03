@@ -1,0 +1,17 @@
+<script>
+	// Cara pembuatan object on ES5
+	
+	function Car() {}
+	
+	var car = new Car();
+	Car.prototype.status = 'New';
+	Car.prototype.wheel = 4;
+	Car.prototype.avail = function(){
+		console.log('Available');
+	};
+	
+	console.log(car.__proto__);
+	
+	var ford = new Car();
+	console.log(ford.__proto__);
+</script>
