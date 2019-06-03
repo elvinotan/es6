@@ -5,10 +5,10 @@
 		{name:'Ethan', grade:7},	
 	];
 	
-	// Cari student yang pass course, logic > 6
-	// Every : Semua data di cek sampai selesai, result di atas, return berupa boolean
-	// Some : Kalo udah ketemu 1 yang match kriteria maka stop, return berupa boolean
-	
+	// Every : Semua data di cek sampai selesai, 
+	// bila ketemu dgn kreteria akan lanjug looping
+	// bila tidak ketemu dgn kreteria akan stop dan return false;
+
 	// Cek semua student yang gradenya lebih besar ari 5
 	const pass = students.every(function(s){
 		return s.grade > 5;
