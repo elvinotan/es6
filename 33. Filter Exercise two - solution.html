@@ -1,0 +1,29 @@
+<script>
+	const channel = [
+	   {name:'HBO',premium:true},
+	   {name:'LIFE',premium:false},
+	   {name:'Max',premium:true},
+	   {name:'Cooking channel',premium:false},
+	   {name:'WOBI',premium:false}
+	];
+	
+	const user = {
+		name : 'Constantine',
+		premium:true,
+		premiumChannel : function() {
+			// Kembalikan channel yang premium
+			return channel.filter(function(p){
+				return p.premium;
+			});
+		},
+		channel : function() {
+			// Kembalikan channel yang bukan premium
+			return channel.filter(function(p){
+				return !p.premium;
+			});
+		}
+	}
+	
+	console.log(user.premiumChannel());
+	console.log(user.channel());
+</script>
