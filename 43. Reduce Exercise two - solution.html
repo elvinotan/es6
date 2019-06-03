@@ -1,0 +1,20 @@
+<script>
+	const computers = [
+	   {type:'Laptop',price:124, os:'Windows'},
+	   {type:'Desk',price:124, os:'Mac'},
+	   {type:'Desk',price:124, os:'Windows'},
+	   {type:'Laptop',price:124, os:'Mac'},
+	   {type:'Laptop',price:124, os:'Windows'},
+	];
+	
+	const osType = {win:0, mac:0}
+	
+	const result = computers.reduce(function(loop, p){
+		if (p.os === 'Mac') { loop.mac += 1; }
+		if (p.os === 'Windows') { loop.win += 1; }
+		return loop;
+		
+	}, osType);
+	
+	console.log(result);
+</script>
