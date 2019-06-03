@@ -1,0 +1,9 @@
+<script>
+	const url = 'https://jsonplaceholder.typicode.com/posts/1';
+	
+	//Fetch build in on ES6
+	fetch(url)
+		.then(res => res.json())
+		.then(data => console.log(data))
+		.catch(err => console.log('Error', err))
+</script>
