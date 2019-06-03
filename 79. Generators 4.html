@@ -1,0 +1,24 @@
+<script>
+	const car = {
+		id:1,
+		brand:'Ford',
+		doors:4,
+		wheels:4,
+		color:'red',
+		year:2017,
+		model:'Mustang'
+	}
+	
+	function* carGenerator(obj) {
+		yield obj.brand;
+		yield obj.year;
+		yield obj.model;
+	}
+	
+	let newCar = [];
+	for (let i of carGenerator(car)) {
+		newCar = [...newCar, i];
+	}
+	
+	console.log(newCar);
+</script>
