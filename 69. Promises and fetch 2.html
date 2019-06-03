@@ -1,0 +1,27 @@
+<html>
+	<head>
+	</head>
+	<body>
+		State :</br>
+		1. Unresolved, Pending </br>
+		2. Resolved, Fulfiled </br>
+		3. Rejected </br>
+	</body>
+	<script>
+		let promise = new Promise((resolved, rejected)=>{
+			//resolved();
+			//rejected();
+			
+			setTimeout(()=>{
+				resolved();
+				//rejected();
+				
+			},5000);
+		});
+		
+		promise
+		.then(()=> console.log('Finish 1'))
+		.then(()=> console.log('Finish 2'))
+		.catch(()=> console.log('Catch'))
+	</script>
+</html>
