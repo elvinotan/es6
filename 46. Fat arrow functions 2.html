@@ -1,0 +1,26 @@
+<script>
+ const cars = {
+	brands : ['Ford', 'Audi', 'BMW'],
+	category : 'Sport Car',
+	messageES5_1 : function() { // This problem on ES5
+		this.brands.map(function(brand){
+			console.log(`${brand} is a ${this.category}`);
+		});
+	},
+	messageES5_2 : function() { // Fixing This probelm on ES5
+		const $this = this;
+		this.brands.map(function(brand){
+			console.log(`${brand} is a ${$this.category}`);
+		});
+	},
+	messageES6 : function() { // This on ES6
+		this.brands.map(brand =>
+			console.log(`${brand} is a ${this.category}`)
+		);
+	}
+ }
+ 
+ cars.messageES5_1();
+ cars.messageES5_2();
+ cars.messageES6();
+</script>
