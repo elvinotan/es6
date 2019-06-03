@@ -1,0 +1,21 @@
+<script>
+	function* logGenerator() {
+		alert('Alert 1');
+		yield 'Step 1 Complete'
+		
+		alert('Alert 2');
+		yield 'Step 2 Complete'
+		
+		alert('Alert 3');
+		yield 'Step 3 Complete'
+		
+		alert('Alert 4');
+		yield 'Step 4 Complete'
+		
+		return 'Finish'
+	}
+	
+	let gen = logGenerator();
+	
+	// Panggil gen.next() untuk panggil perintah masing masing yield
+</script>
