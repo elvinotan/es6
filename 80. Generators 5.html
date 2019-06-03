@@ -1,0 +1,38 @@
+<script>
+	const stores = {
+		store1:'New York',
+		store2:'India'
+	}
+	
+	const car = {
+		id:1,
+		brand:'Ford',
+		doors:4,
+		wheels:4,
+		color:'red',
+		year:2017,
+		model:'Mustang',
+		store:stores
+	}
+	
+	// Cara ambil specific properties
+	function* storeGenerator(obj) {
+		yield obj.store1;
+		yield obj.store2;
+	}
+	
+	// Cara ambil specific properties
+	function* carGenerator(obj) {
+		yield obj.brand;
+		yield obj.year;
+		yield obj.model;
+		yield* storeGenerator(obj.store); //ini kunci untuk menggabungan 2 generator
+	}
+	
+	let newCar = [];
+	for (let i of carGenerator(car)) {
+		newCar = [...newCar, i];
+	}
+	
+	console.log(newCar);
+</script>
