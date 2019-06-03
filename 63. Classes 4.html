@@ -1,0 +1,31 @@
+<script>
+// Cara menurunkan extend Object
+
+class Car {
+	// Hati-hati penulisan kata constructor
+	constructor() {
+		this.status = 'New';
+		this.wheel = 4;
+		this.avaiable = () => {
+			console.log('Aviable');
+		};
+	}
+	
+	otherfunc() {
+		console.log('Hey');
+	}
+}
+
+// Yang diturnkan dari parent hanya property dan function yang ada di constructor
+// property dan function yang di luar constractor tidak akan di turunkan
+class Ford extends Car {
+	constructor() {
+		super();
+		this.price = 5000;
+	}
+}
+
+const ford = new Ford();
+
+console.log(ford);
+</script>
