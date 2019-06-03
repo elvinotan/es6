@@ -1,0 +1,20 @@
+<script>
+	// File lokasi app.js
+	// Harus gunakan export agar variable/method ter-expose
+	export const sum = 10;
+	export const otherSum = 10+10;
+	export function random() {
+		return Math.randoom();
+	}
+	export const array = [1,2,3,4,5];
+	export const obj = {id:1};
+	
+	// File lokasi main.js
+	import { sum, otherSum, random, array, obj } from './app.js';
+	
+	console.log(sum);
+	console.log(otherSum);
+	console.log(random());
+	console.log(array);
+	console.log(obj);
+</script>
