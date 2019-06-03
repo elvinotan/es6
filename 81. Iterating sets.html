@@ -1,0 +1,12 @@
+<script>
+	let mySet = new Set(['Constantine', 'Davin', 'Ethan']);
+	
+	for (let item of mySet) {
+		console.log(item);
+	}
+	
+	mySet.forEach((item)=> console.log(item));
+	
+	const filtered = [...mySet].filter(item => item.startsWith('D'));
+	console.log(filtered);
+</script>
