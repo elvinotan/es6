@@ -10,10 +10,11 @@
 	const user = {
 		name : 'Constantine',
 		premium:true,
-		premiumChannel : function() {
+		premiumChannelES5 : function() {
+			const pPremium = this.premium;
 			// Kembalikan channel yang premium
 			return channel.filter(function(p){
-				return p.premium;
+				return p.premium == pPremium;
 			});
 		},
 		channel : function() {
@@ -21,9 +22,13 @@
 			return channel.filter(function(p){
 				return !p.premium;
 			});
-		}
+		},
+		premiumChannelES6 : function() {
+			return channel.filter(p => p.premium === this.premium );
+		},
 	}
 	
-	console.log(user.premiumChannel());
+	console.log(user.premiumChannelES5());
 	console.log(user.channel());
+	console.log(user.premiumChannelES6());
 </script>
