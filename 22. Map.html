@@ -1,7 +1,8 @@
 <script>
 	// Looping data number dan dikalihan dgn 10, simpan ke array baru
-	/*
-	var numbers = [1,2,3,4,5];
+	
+	// ES5
+	var numbers = [1, 2, 3, 4, 5];
 	var otherNumbers = [];
 	
 	for (var i=0; i < numbers.length; i++) {
@@ -9,15 +10,17 @@
 	}
 	
 	console.log("ES5"+ otherNumbers);
-	*/
 	
-	// Ciri khas dari map adalah looping sejumlah n object dan akan
-	// return data sejumlah n object juga
+	
+	// Ciri khas dari map adalah looping sejumlah n object dan akan return data sejumlah n object juga
+	// ES6
+	/*
 	const numbers = [1,2,3,4,5];
 	const otherNumbers = numbers.map(function(number){
 		return number *10;
 	});
 	
 	console.log("ES6 "+otherNumbers);
+	*/
 	
 </script>

@@ -11,6 +11,7 @@
 	</body>
 	
 	<script>
+		// find tag berdasarkan class name
 		var list = document.querySelector('.user_list');
 		
 		function addUserEs5(name, lastname) {
@@ -21,10 +22,12 @@
 			temp += '<div>'+lastname+'</div>';
 			temp += '</div>';
 			
+			// inject html tag 
 			list.insertAdjacentHTML('beforeend', temp);
 		};
 		
 		function addUserEs6(name, lastname) {
+			// Backtick dapat digunakan untuk template multiline
 			var temp = `<div class='user'>
 							<div>${name}</div>
 							<div>${lastname}</div>
@@ -34,6 +37,6 @@
 		};
 		
 		addUserEs5('Constantine', 'Davin');
-		addUserEs6('Carinnia', 'Tan');
+		//addUserEs6('Carinnia', 'Untoro');
 	</script>
 </html>

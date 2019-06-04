@@ -17,12 +17,11 @@
 		}
 		
 		let tamplate = '';
-		products.forEach(function(p){
-			
+		products.forEach(function(p){			
 			tamplate += `<div>
 								<div>${p.name}</div>
 								<div>${p.price}</div>
-								${salesTag(p)}
+								<div>${salesTag(p)}</div>
 				         </div></br>`;	
 		});
 		

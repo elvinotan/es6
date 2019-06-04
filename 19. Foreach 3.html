@@ -10,11 +10,14 @@
 			{qty:4, amount:2000}
 		];
 		
-		let total = 0; 
+		let total = 0;
+		
+		//ES5
 		for (let i = 0;  i < purchases.length; i++) {
 			total = purchases[i].qty * purchases[i].amount;
 		}
 		
+		//ES6
 		//purchases.forEach(function(p){
 			//total = p.qty * p.amount;
 		//})

@@ -1,15 +1,15 @@
 <script>
 	const channel = [
-	   {name:'HBO',premium:true},
-	   {name:'LIFE',premium:false},
-	   {name:'Max',premium:true},
-	   {name:'Cooking channel',premium:false},
-	   {name:'WOBI',premium:false}
+	   {name:'HBO', premium:true},
+	   {name:'LIFE', premium:false},
+	   {name:'Max', premium:true},
+	   {name:'Cooking channel', premium:false},
+	   {name:'WOBI', premium:false}
 	];
 	
 	const user = {
 		name : 'Constantine',
-		premium:true,
+		premium : true,
 		premiumChannelES5 : function() {
 			const pPremium = this.premium;
 			// Kembalikan channel yang premium
@@ -29,6 +29,6 @@
 	}
 	
 	console.log(user.premiumChannelES5());
-	console.log(user.channel());
-	console.log(user.premiumChannelES6());
+	//console.log(user.channel());
+	//console.log(user.premiumChannelES6());
 </script>

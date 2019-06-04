@@ -1,12 +1,13 @@
 <script>
 	const channels = [
-	   {name:'HBO',premium:true},
-	   {name:'LIFE',premium:false},
-	   {name:'Max',premium:true},
-	   {name:'Cooking channel',premium:false},
-	   {name:'WOBI',premium:false}
+	   {name:'HBO', premium:true},
+	   {name:'LIFE', premium:false},
+	   {name:'Max', premium:true},
+	   {name:'Cooking channel', premium:false},
+	   {name:'WOBI', premium:false}
 	];
 	
+	// return berupa expression boolean secara langsung
 	const premiumchannel = channels.filter(function(p){
 		return p.premium;
 	})
