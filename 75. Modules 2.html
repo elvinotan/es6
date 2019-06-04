@@ -1,6 +1,7 @@
 <script>
 	// File lokasi app.js
 	// Harus gunakan export agar variable/method ter-expose
+	// Cara export sekaligus
 	const sum = 10;
 	const otherSum = 10+10;
 	function random() {
@@ -9,15 +10,18 @@
 	const array = [1,2,3,4,5];
 	const obj = {id:1};
 	export {
-		sum as penjumlahan,
+		sum as penjumlahan, // cara export dgn menggunakan alias
 		otherSum,
 		random,
 		array,
 		obj
 	}
 	
+	
+	
 	// File lokasi main.js
 	// Perhatikan untuk perubahan nama (as) bisa dari exporter atau importer
+	// Cara import dgn menggunakan alias
 	import { penjumlahan, random as acakacak } from './app.js'
 	
 	// bisa juga
