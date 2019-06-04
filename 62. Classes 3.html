@@ -1,20 +1,21 @@
 <script>
-class Car {
-	// Hati-hati penulisan kata constructor
-	constructor({status, wheel, avaiable}) {
-		this.status = status;
-		this.wheel = wheel;
-		this.avaiable = avaiable;
-	}	
-}
-
-const car = new Car({
-	status:'New',
-	wheel:4,
-	avaiable () {
-		console.log('Aviable');
+	// Pembuatan object pada ES6 menggunakan Class	
+	class Car {
+		// Hati-hati penulisan kata constructor
+		constructor({status, wheel, avaiable}) {
+			this.status = status;
+			this.wheel = wheel;
+			this.avaiable = avaiable;
+		}	
 	}
-});
 
-console.log(car);
+	const car = new Car({
+		status : 'New',
+		wheel : 4,
+		avaiable () {
+			console.log('Aviable');
+		}
+	});
+
+	console.log(car);
 </script>

@@ -2,12 +2,15 @@
 	const brands_sport = ["Ferari", "BMW"];
 	const brands_other = ["Audi", "Ford"];
 	
-	//ES5
+	// ES5 cara menggabungkan 2 array
 	const newArrayES5 = brands_sport.concat(brands_other);
 	newArrayES5.push('Other brand');
 	console.log(newArrayES5);
 	
-	//ES6
+	// ES6 cara menggabungkan 2 array dan inject data baru
+	// ini bukan hanya untuk array tp bisa object
+	// contoh user={name:'Name', age:25};
+	// let newUser = ...user; (cara yg di pakai untuk duplikasi object)
 	const newArrayES6 = [...brands_sport, ...brands_other, 'Other Brand'];
 	console.log(newArrayES6);
 	
