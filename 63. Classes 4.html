@@ -2,6 +2,7 @@
 // Cara menurunkan extend Object
 
 class Car {
+	
 	// Hati-hati penulisan kata constructor
 	constructor() {
 		this.status = 'New';
@@ -16,8 +17,9 @@ class Car {
 	}
 }
 
-// Yang diturnkan dari parent hanya property dan function yang ada di constructor
+// Yang diturunkan dari parent hanya property dan function yang ada di constructor
 // property dan function yang di luar constractor tidak akan di turunkan
+// harus gunakan super() bila menerapkan extends. 
 class Ford extends Car {
 	constructor() {
 		super();
