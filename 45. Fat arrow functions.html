@@ -1,14 +1,20 @@
 <script>
 	const funcES5 = function(name, age) {
-		return `My name is ${name}, and age ${age}`;
+		return "My name is "+name+", and age "+age;
 	}
 	
+	//ES5-ES6
+	// 1. hapus kata function
+	// 2. Gunakan => Fat arrow
+	// 3. Bila hanya 1 baris {} bisa di hapus dan return di hilangkan
 	const funcES61 = (name, age) => `My name is ${name}, and age ${age}`;
-	
+
+	//ES5-ES6
+	// 4. Bila pameter hanya 1 maka () bisa di hilangkan
 	const funcES62 = name => `My name is ${name}, and age 14`;
 	
 	
 	console.log(funcES5('Constantine', 12));
-	console.log(funcES61('Davin', 13));
-	console.log(funcES62('Ethan'));
+	//console.log(funcES61('Davin', 13));
+	//console.log(funcES62('Ethan'));
 </script>
