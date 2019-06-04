@@ -3,11 +3,11 @@
 	
 	//Fetch build in on ES6
 	fetch(url, {
-		method : 'POST',
-		header : {
+		method : 'POST', //HTTPMethod
+		header : { //Header
 			'Content-Type':'application/json'
 		},
-		body : JSON.stringify( {title:'some title'} )
+		body : JSON.stringify( {title:'some title'} ) //Body
 	})		
 	.then(res => res.json())
 	.then(data => console.log(data))

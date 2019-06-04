@@ -1,14 +1,14 @@
 <script>
-	console.log(Number.isSafeInteger(200));
-	console.log(Number.isSafeInteger(43));
-	console.log(Number.isSafeInteger(0.11212));
-	console.log(Number.isSafeInteger(0,11212));
+	console.log(Number.isSafeInteger(200)); //true
+	console.log(Number.isSafeInteger(43)); //true
+	console.log(Number.isSafeInteger(0.11212)); //false
+	console.log(Number.isSafeInteger(0,11212)); //true
 	
-	console.log(Number.isInteger(200));
-	console.log(Number.isInteger(-1000));
-	console.log(Number.isInteger(0.2));
+	console.log(Number.isInteger(200)); //true
+	console.log(Number.isInteger(-1000)); //true
+	console.log(Number.isInteger(0.2)); // false
 	
-	console.log(Math.trunc(42.8));
-	console.log(Math.trunc(0.1));
-	console.log(Math.trunc(-0.1));
+	console.log(Math.trunc(42.8)); // 42
+	console.log(Math.trunc(0.1));  // 0
+	console.log(Math.trunc(-0.1)); // -0
 </script>
