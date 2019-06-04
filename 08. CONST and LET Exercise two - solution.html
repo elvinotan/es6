@@ -12,13 +12,14 @@
 
 
 <script>
+	// find object by class name
 	const cupcake = document.querySelector('.cupcake');
 	const container = document.querySelector('.orders')
 	
 	const cupcakes = [
-	 {id:1, flavor:'Strawberry'},
-	 {id:2, flavor:'Apple'},
-	 {id:3, flavor:'Banana'}
+		{id:1, flavor:'Strawberry'},
+		{id:2, flavor:'Apple'},
+		{id:3, flavor:'Banana'}
 	]
 	
 	let randomCupcake;
@@ -41,6 +42,7 @@
 	
 	 // Create the message
 	 message = '<div>- You won a ' + cupcakes[randomCupcake].flavor + ' for ' + finalAmount + '$ , your order # is '+ orderNumber + '</div>'
+	 
 	 container.insertAdjacentHTML('beforeend',message)
 	});
 </script>
