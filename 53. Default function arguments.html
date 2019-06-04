@@ -1,8 +1,10 @@
 <script>
+	//ES5
 	function carES5(brand) {
 		console.log(`My Brand is ${brand}`)	
 	}
 	
+	//ES6 Cara memberikan nilai default pada parameter
 	function carES6_1(brand = 'Fords') {
 		console.log(`My Brand is ${brand}`)	
 	}
@@ -12,11 +14,12 @@
 		return brands[Math.floor(Math.random() * brands.length)];
 	}
 	
+	//ES6 Cara memberikan nilai default pada parameter berupa function
 	function carES6_2(brand = randomBrand()) {
 		console.log(`My Brand is ${brand}`)	
 	}
 	
 	carES5('Chevy');
-	carES6_1();
-	carES6_2();
+	//carES6_1();
+	//carES6_2();
 </script>

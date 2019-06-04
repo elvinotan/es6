@@ -1,4 +1,5 @@
 <script>
+	//ES5
 	function greetingES5(name){
 	   if(name === undefined){
 	       name = 'user'
@@ -6,9 +7,9 @@
 	   return 'Hello '+ name;
 	}
 	
+	//ES6
 	greetingES6 = (name = 'user') => `Hello ${name}`;
 	
-	
 	console.log(greetingES5())
-	console.log(greetingES6())
+	//console.log(greetingES6())
 </script>

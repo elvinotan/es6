@@ -1,4 +1,5 @@
 <script>
+	// ES5
 	const heroES5 = function(name, powers) {
 		return {
 			name:name,
@@ -9,11 +10,12 @@
 		}
 	}
 	
+	// ES6, ubah function pada object
 	const heroES6 = (name, powers) => {
 		return {
 			name,
 			powers,
-			getFriends() {
+			getFriends() { 
 				return 'Louise Lane'
 			},
 			getEnemies() {
@@ -25,7 +27,7 @@
 const aheroES5 = heroES5('Superman ES5',  'Fly ES5');
 console.log(aheroES5);
 
-const aheroES6 = heroES6('Superman ES6',  'Fly ES6');
-console.log(aheroES6);
+//const aheroES6 = heroES6('Superman ES6',  'Fly ES6');
+//console.log(aheroES6);
 
 </script>

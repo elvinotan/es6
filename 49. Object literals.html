@@ -1,9 +1,12 @@
 <script>
+	//ES5
 	const request = (url, data) => {
 		$.ajax({method:'post', url:url, data:data });
 	}
 	
-	// Convert into
+	// Convert into ES6
+	// Di ES6 bila nama property sama dgn nama variable value maka dapat di singkat
+	// contoh {data:data} dapat diubah jadi {data} 
 	const requestConvert = (url, data) => {
 		$.ajax({method:'post', url, data });
 	}
