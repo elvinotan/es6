@@ -28,6 +28,9 @@
 			{brand:'Porsche', price:100, availabel:1, type:'Urban'},
 		];
 		
+		//select tag dgn classname .search, lalu pasang click event
+		// untuk cari tag dengan nama class di awali dgn tanda .
+		// untuk cari tag dengan id tag di awali dengan #
 		document.querySelector('.search').addEventListener('click', function(){
 			const price = parseInt(document.querySelector('#price').value);	
 			const type = document.querySelector('#type').value;	
@@ -35,12 +38,12 @@
 			const result = cars.find(function(p){
 				return p.price < price && p.type === p.type && p.availabel > 0;
 			});
+			
 			if (result) {
 				console.log(`Found brand ${result.brand} availabel ${result.availabel}`);	
 			}else{
 				console.log('No Car for you');
-			}
-			
+			}			
 		});
 	</script>
 </html>
