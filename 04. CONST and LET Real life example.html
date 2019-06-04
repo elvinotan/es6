@@ -11,20 +11,24 @@
 	</body>
 	
 	<script>
+		// Ambil semua tag div
 		var divs = document.getElementsByTagName('div');
 		
+		// looping divs
 		for (var i = 0; i < divs.length; i++) {
+			
+			//pasang event untuk masing masing div dgn variable var (global scope)
 			divs[i].addEventListener('click', function(){
 				console.log('You click div # '+i);
 			});
 		}
 		
+		// looping divs
 		//for (let i = 0; i < divs.length; i++) {
+			// pasang event untuk masing-masing div dgn variable let (local scope)
 			//divs[i].addEventListener('click', function(){
 				//console.log('You click div # '+i);
 			//});
 		//}
-		
-		 
 	</script>
 </html>
