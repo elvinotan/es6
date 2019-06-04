@@ -7,15 +7,14 @@ Variable Scope </br>
 		var winner = true;
 		
 		function user() {
-			var winner = false; // create instane winner for local
-			// winner = true; // merubah nilai variable global
-			console.log("in 1 "+winner);
+			var winner = false; // create instane winner for local (function scope)
+			// winner = true; // merubah nilai variable global (global scope)
+			console.log("Example 1.User "+winner);
 		}
 		
-		user();
-		console.log("out 1 "+winner);
+		user(); // execute function user
+		console.log("Example 1 "+winner);
 	}
-	
 	
 	// Example 2
 	function example2() {
@@ -23,12 +22,12 @@ Variable Scope </br>
 	  var winner = true;
 	  
 	  if (value == 10) {
-		  var winner = false; // merubah nilai variable global
-		  //winner = false; // merubah nilai variable global
-		  console.log("in 2 "+winner);
+		  var winner = false; // merubah nilai variable global (global scope)
+		  //winner = false; // merubah nilai variable global (global scope)
+		  console.log("Example 2.method "+winner);
 	  }
 	  
-	  console.log("out 2 "+winner);
+	  console.log("Example 2 "+winner);
 	}
 	
 	
@@ -38,15 +37,15 @@ Variable Scope </br>
 	  let winner = true;
 	  
 	  if (value == 10) {
-		  let winner = false; // create instane winner for local
-		  //winner = false; // merubah nilai variable global
-		  console.log("in 3 "+winner);
+		  let winner = false; // create instane winner for local (function scope)
+		  //winner = false; // merubah nilai variable global (global scope)
+		  console.log("Example 3.method "+winner);
 	  }
 	  
-	  console.log("out 3 "+winner);
+	  console.log("Example 3 "+winner);
 	}
 	
-	//example1();
+	example1();
 	//example2();
-	example3();
+	//example3();
 </script>
